@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { AfdelingComponent } from './components/afdeling/afdeling.component';
 import { PersonenComponent } from './components/personen/personen.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [

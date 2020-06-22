@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'springboot-app';
-  colors = ['red','green','blue','orange','magenta','pink'];
-  show=false;
-  clicked(){
-    this.show=!this.show;
-  }
+  colors = ['red', 'green', 'blue', 'orange', 'magenta', 'pink'];
+  
 }
