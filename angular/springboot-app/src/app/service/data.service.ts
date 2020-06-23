@@ -24,6 +24,7 @@ export class DataService {
   }
 
   saveAfdeling(model: any): Observable<any> {
+    console.log('saveAfdeling')
     return this.http.post(environment.baseURL + '/afdelingen', model);
   }
 

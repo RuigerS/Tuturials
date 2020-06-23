@@ -8,6 +8,8 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class AfdelingComponent implements OnInit {
   afdelingen = [];
+  model: any = {}
+  showModel = false;
 
   constructor(private dataService: DataService) { }
 
@@ -25,5 +27,21 @@ export class AfdelingComponent implements OnInit {
       }
     )
   }
+  onSubmit() {
 
+    this.dataService.saveAfdeling(this.model).subscribe(
+      data => {
+        console.log('Submitting form' + data);
+        this.loadAfdelingen();
+      },
+      error => {
+        console.log('Error submitting form');
+      }
+    );
+    this.showModel = false;
+  }
+  addAfdeling() {
+    this.model = { id: 0, naam: '' };
+    this.showModel = true;
+  }
 }
