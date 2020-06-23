@@ -1,16 +1,31 @@
-<div *ngFor="let afdeling of afdelingen">{{afdeling.naam}}</div><br><br>
+<br>
+<h4>Afdelingen</h4>
+<table class="table">
+<div *ngFor="let afdeling of afdelingen">
+    <tr>
+        <td>
+            <span class="fa fa-user" title="Personen Afdeling"></span>
+            <span class="fa fa-pencil" title="Bewerken Afdeling"></span>
+            <span (click)="deleteAfdeling(afdeling.id)" class="fa fa-trash" title="Verwijderen Afdeling"></span>
+            {{afdeling.id}} - {{afdeling.naam}}
+        </td>
+    </tr>
+</div>
+</table>
 <span (click)="addAfdeling()" class="fa fa-plus" title="Toevoegen Afdeling"></span>
-<div *ngIf="showModel" class="row">
+<div *ngIf="showModelAfdeling" class="row">
     <form #f="ngForm">
         <div class="form-group">
             <label>Naam</label>
             <input class="form-control" required #naam="ngModel" pattern="[A-Za-z]*"
                 [class.is-invalid]="naam.invalid && naam.touched" name="naam" type="text" [(ngModel)]="model.naam">
-            <div *ngIf="naam.errors && (naam.dirty || naam.touched)">
+            <div *ngIf="naam.errors && (naam.dirty || naam.touched); else elseBlock">
                 <div class="alert alert-danger mt-2" *ngIf="naam.errors.required">Naam is verplicht</div>
                 <div class="alert alert-danger mt-2" *ngIf="naam.errors.pattern">Naam mag alleen letters hebben</div>
             </div>
+            <ng-template #elseBlock>
             <button (click)="onSubmit()">Submit</button>
+            </ng-template>
         </div>
     </form>
 </div>
