@@ -7,22 +7,22 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./personen.component.css']
 })
 export class PersonenComponent implements OnInit {
-  personen = []
+  personen = [];
 
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.loadPersonen()
+    this.loadPersonen();
   }
   loadPersonen() {
     this.dataService.loadPersonen().subscribe(
       data => {
-        console.log('personen data:', data)
-        this.personen = data
+        console.log('personen data:', data);
+        this.personen = data;
       },
       error => {
-        console.log('Failed to load personen')
+        console.log('Failed to load personen');
       }
-    )
+    );
   }
 }

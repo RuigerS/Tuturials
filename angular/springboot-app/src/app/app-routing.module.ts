@@ -4,7 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AfdelingComponent } from './components/afdeling/afdeling.component';
 import { PersonenComponent } from './components/personen/personen.component';
 
-const routes: Routes = [
+const routes: Routes = [ 
   {
    path: '',
    redirectTo: 'home',

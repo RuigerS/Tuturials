@@ -2,9 +2,16 @@
 <div *ngIf="show">
   
 <div>
-    <a routerLink="/home">Home</a><br>
-    <a routerLink="/personen">Personen</a><br>
-    <a routerLink="/afdeling">Afdeling</a>
+    <div class="menu nav flex-column">
+        <ng-container>
+            <a class="nav-link" routerLink="/home">Home</a>
+        </ng-container>
+        <ng-container>
+            <a class="nav-link" routerLink="/personen">Personen</a>
+        </ng-container>
+        <ng-container>
+            <a class="nav-link" routerLink="/afdeling">Afdeling</a>
+        </ng-container>
+    </div>
 </div>
-<!--div *ngFor="let color of colors">{{color}}</div-->
 </div>

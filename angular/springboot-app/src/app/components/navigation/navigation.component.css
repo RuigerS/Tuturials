@@ -1,0 +1,24 @@
+.menu {
+    color: #900000;
+    margin-top: 30px;
+}
+ 
+.nav-link {
+    color: #900000;
+    border-bottom: 1px #eae7dc solid;
+    font-size: 18px;
+}
+ 
+.nav-link:hover {
+    background-color: #800000;
+    color: white;
+    font-size: 18px;
+}
+.nospace {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+ul {
+    list-style: none;
+    width: 100%;
+}

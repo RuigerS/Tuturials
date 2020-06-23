@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-
+show = false;
   constructor() { }
 
   ngOnInit(): void {
   }
-  show = false;
+
   clicked() {
     this.show = !this.show;
   }

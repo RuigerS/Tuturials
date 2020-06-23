@@ -12,7 +12,7 @@ export class DataService {
   constructor(private http: HttpClient) {  }
 
   loadPersonen(): Observable<any> {
-    return this.http.get(environment.baseURL + '/personen');
+    return this.http.get(environment.baseURL + '/personen/');
   }
 
   loadPersonenForAfdeling(id: number): Observable<any> {
@@ -32,7 +32,7 @@ export class DataService {
   }
 
   updateAfdeling(model: any): Observable<any> {
-    console.log('update:', model)
+    console.log('update:', model);
     return this.http.put(environment.baseURL + '/afdelingen/' + model.id, model);
   }
 }
