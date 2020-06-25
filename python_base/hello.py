@@ -1,4 +1,4 @@
-import os
+import os 
 #clear the screen
 os.system('cls')
 
@@ -7,7 +7,7 @@ os.system('cls')
 print ("Hello World") #comment
 print("")
 
-###################
+###################################################
 # variables: lowercase with underscores
 first_name="John"
 print(first_name)
@@ -20,6 +20,8 @@ print("")
 first_name="Bob"
 print(first_name)
 print("")
+###################################################
+
 #Data types:
 #-Strings
 string = "String"
@@ -50,6 +52,6 @@ print(dictionary)
 print("")
 
 
-#######################
+###################################################
 input ('Press ENTER to exit')
 
