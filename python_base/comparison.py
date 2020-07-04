@@ -3,7 +3,12 @@ import os
 os.system('cls')
 ###################################################
 
-# code lesson here
+first_name = "John"
+print(10 == 15)
+print(9!=835)
+#  >  <  >=  <=
+
+print("John"=="john")
+print ([1,2,3]==[1,2,4])
 
 ###################################################
-input ('Press ENTER to exit')
