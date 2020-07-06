@@ -1,0 +1,22 @@
+// write your code here
+var x=3;
+var y = 3*x;
+print(y);
+
+function square(x){
+    return x*x;
+}
+
+y = square(5);
+print(y);
+print(square(4));
+
+var img = new SimpleImage("rodger.png");
+print(img.width);
+print(img.getWidth());
+print(img);
+print(img.getPixel(5,5));
+print(img.getPixel(5,5).getRed());
+print(img.getPixel(5,5).getGreen());
+print(img.getPixel(5,5).getBlue());
+

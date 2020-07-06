@@ -1,0 +1,46 @@
+// write your code here
+function setBlack(pixel){
+    pixel.setRed(0);
+    pixel.setGreen(0);
+    pixel.setBlue(0);
+    return pixel;
+}
+
+var bdimg=new SimpleImage("skyline.jpg");
+for(var pxl of bdimg.values()){
+    if(pxl.getX()<10 || pxl.getY()<10||pxl.getY()>(bdimg.getHeight()-10)||pxl.getX()>(bdimg.getWidth()-10)){
+        pxl=setBlack(pxl);
+    }
+}
+print(bdimg);
+
+
+
+var fgimg=new SimpleImage("drewRobert.png");
+var bgimg=new SimpleImage("dinos.png");
+
+for(var pxl of fgimg.values()){
+    if(pxl.getGreen()>(pxl.getBlue()+pxl.getRed())){
+        fgimg.setPixel(pxl.getX(),pxl.getY(),bgimg.getPixel(pxl.getX(),pxl.getY()));
+    }
+}
+print(fgimg);
+
+
+var img = new SimpleImage(200,200);
+for (var px of img.values()){
+  var x = px.getX();
+  var y = px.getY();
+  if (x < img.getWidth()/2){
+    px.setRed(255);
+  }
+  if (y>img.getHeight()/2){
+    px.setBlue(255);
+  }
+  else if (x>=img.getWidth()/2) {
+    px.setGreen(255);
+  }
+}
+print (img);
+
+

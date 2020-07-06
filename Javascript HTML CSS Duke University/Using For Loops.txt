@@ -1,0 +1,15 @@
+// write your code here
+var img = new SimpleImage(200,200);
+for(var pxl of img.values()){
+    pxl.setGreen(255);
+    pxl.setBlue(0);
+    pxl.setRed(255);
+}
+print(img);
+var img2 = new SimpleImage(200,200);
+for(var pxl of img2.values()){
+    pxl.setGreen(0);
+    pxl.setBlue(255);
+    pxl.setRed(255);
+}
+print(img2);

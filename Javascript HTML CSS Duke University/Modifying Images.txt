@@ -1,0 +1,65 @@
+// write your code here
+//if(x<y){
+//    anything;
+//}
+//else{
+//    other thing;
+//}
+
+var img=new SimpleImage("smallpanda.png");
+for(var pxl of img.values()){
+    if(pxl.getX()<(img.width/3)){
+        //reddish
+        pxl.setRed(pxl.getRed()+50);
+    }
+    else if((pxl.getX())<((img.width/3)*2)){
+        //greenish
+        pxl.setGreen(pxl.getGreen()+50);
+    }
+    else{
+        //bleuish
+        pxl.setBlue(pxl.getBlue()+50);
+    }
+}
+print(img);
+
+var img2=new SimpleImage("chapel.png");
+for(var pxl of img2.values()){
+    if(pxl.getX()<(img2.width/3)){
+        //red
+        pxl.setRed(255);
+    }
+    else if((pxl.getX())<((img2.width/3)*2)){
+        //green
+        pxl.setGreen(255);
+    }
+    else{
+        //bleu
+        pxl.setBlue(255);
+    }
+}
+print(img2);
+
+function swapRedGreen(pxl){
+    var oriGreen = pxl.getGreen;
+    var oriRed = pxl.getRed;
+    pxl.setGreen(oriRed);
+    pxl.setRed(oriGreen);
+    return pxl;
+}
+
+var img3 = new SimpleImage("palm-and-beach.png");
+for(var pxl of img3.values()){
+    swapRedGreen(pxl);
+}
+print(img3);
+
+var img4 = new SimpleImage("duke_blue_devil.png");
+for(var pxl of img4.values()){
+    if(pxl.getGreen()<255){
+        pxl.setRed(255);
+        pxl.setGreen(255);
+        pxl.setBlue(0);
+    }
+}
+print(img4);
