@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+  </script>
+    
+  </head>
+
+<body>
+  <h1>Green Screen Web Page</h1>
+  <canvas id="cvs1">
+  </canvas>
+  <canvas id="cvs2">
+  </canvas>
+  <canvas id="cvs3">
+  </canvas>
+  <p>Foreground: 
+    <input type="file" multiple="false" accept="image/*" id="finputfg" onchange="uploadfg()"></p>        
+  <p>Foreground: 
+    <input type="file" multiple="false" accept="image/*" id="finputbg" onchange="uploadbg()"></p>  
+  <p><input type="button" value="create composite" onclick="docomposite()">
+    <input type="button" value="clear canvases" onclick="doclearcanvases()"></p>
+  <h1>Upload and Display Image</h1>
+  <canvas id="can">
+  </canvas>
+  <canvas id="cangrey">
+  </canvas>
+  <p><input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()"></p>
+  <p><input type="button" value="make greyscale" onclick="makeGrey()"></p>
+  <h1>Toward a canvas</h1>
+  <!--canvas id="d1" class="blueblock">
+</canvas>
+<canvas id="d2" class="yellowblock">
+</canvas-->
+  <canvas id="d1">
+  </canvas>
+  <canvas id="d2">
+  </canvas>
+  <p><input type="button" value="make lime" onclick="dolime()">
+    <input type="button" value="make yellow" onclick="doyellow()"></p>
+  <p><input type="button" value="clear" onclick="doclear()"><input type="button" value="change color" onclick="dochangecolor()">
+  </p>
+  <p><input type="color" value="#300030" id="clr" onclick="docolor2()" onchange="docolor()"></p>
+  <p><input type="range" min="10" max="100" value="10" id="sldr" onchange="dosquare()"></p>
+</body>
+
+</html>
