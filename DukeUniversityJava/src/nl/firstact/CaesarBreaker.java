@@ -13,7 +13,7 @@ public class CaesarBreaker {
         FileResource fr = new FileResource();
         String message = fr.asString();
 //        int key=3;
-//        System.out.println("Begin string: "+message);
+        System.out.println("Begin string: "+message);
 //        String encrypted = CaesarCipher.encrypt(message, key);
 //        System.out.println("Encrypted string: "+encrypted);
 //        String decrypted = decrypt(encrypted, getKey(encrypted));

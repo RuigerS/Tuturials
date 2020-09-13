@@ -2,7 +2,7 @@ package nl.firstact;
 
 import edu.duke.*;
 
-public class Part4 {
+public class FindGenesPart4 {
     public static void main(String[] args) {
         URLResource ur=new URLResource("https://www.dukelearntoprogram.com/course2/data/manylinks.html");
         for(String word:ur.words()){

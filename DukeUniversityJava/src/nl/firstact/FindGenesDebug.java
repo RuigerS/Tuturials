@@ -1,6 +1,6 @@
 package nl.firstact;
 
-public class Debug {
+public class FindGenesDebug {
     public static void main(String[] args) {
         test();
     }

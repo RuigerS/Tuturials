@@ -5,7 +5,7 @@ import org.apache.commons.csv.*;
 
 import java.io.File;
 
-public class Main {
+public class CSVWeatherMain {
 
     public static void main(String[] args) {
         // write your code here

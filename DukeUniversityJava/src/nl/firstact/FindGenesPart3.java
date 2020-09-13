@@ -1,6 +1,6 @@
 package nl.firstact;
 
-public class Part3 {
+public class FindGenesPart3 {
     public static void main(String[] args) {
        testing();
     }
