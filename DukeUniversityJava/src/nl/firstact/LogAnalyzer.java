@@ -75,7 +75,7 @@ public class LogAnalyzer {
     }
 
     public HashMap<String, Integer> countVisitsPerIP() {
-         HashMap<String,Integer> map=new HashMap();
+         HashMap<String,Integer> map=new HashMap<>();
          for(LogEntry le:records){
              map.putIfAbsent(le.getIpAddress(),0);
              map.put(le.getIpAddress(),map.get(le.getIpAddress())+1);
