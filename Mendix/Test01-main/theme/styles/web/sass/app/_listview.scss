@@ -1,0 +1,39 @@
+.mx-listview {
+    >ul {
+        .mx-listview-empty {
+            display: none;
+        }
+    }
+
+    &.documents-list {
+        button.mx-listview-loadMore {
+            display: none;
+        }
+    }
+
+    >li {
+        .row {
+            >div[class*="col-"] {
+                padding: 0;
+            }
+        }
+    }
+
+    .mx-layoutgrid {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+.mx-listview.listview-flex {
+    >ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        >li {
+            flex: 0 1 370px;
+            padding: 0 7.5px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+Buildfile: C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 111 source files to C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\run\bin
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\javasource\mendixsso\implementation\utils\MendixUtils.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+package:
+      [jar] Building jar: C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+

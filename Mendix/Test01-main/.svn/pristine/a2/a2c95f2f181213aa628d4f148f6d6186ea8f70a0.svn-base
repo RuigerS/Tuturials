@@ -1,0 +1,11 @@
+﻿{
+    "files": {
+        "css": [
+            "styles/web/css/main.css"
+        ],
+        "js": [
+            "mxclientsystem/mxui/mxui.js"
+        ]
+    },
+    "cachebust": "{{cachebust}}"
+}

@@ -1,0 +1,76 @@
+[rtlauncher:container$] INFO Evictions for component 'project-userlib':
+Evicted C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\commons-lang3-3.5.jar by C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\commons-lang3-3.9.jar.
+Evicted C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\oauth2-oidc-sdk-6.14.jar by C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\oauth2-oidc-sdk-7.2.jar.
+Evicted C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\nimbus-jose-jwt-6.3.jar by C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\nimbus-jose-jwt-8.10.jar.
+Evicted C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\javax.mail-1.6.1.jar by C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\javax.mail-1.6.2.jar.
+Evicted C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\nimbus-jose-jwt-7.8.jar by C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\nimbus-jose-jwt-8.10.jar.
+Evicted C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\oauth2-oidc-sdk-6.2.jar by C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\oauth2-oidc-sdk-7.2.jar.
+Evicted C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\asm-7.1.jar by C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model\lib\userlib\asm-7.3.1.jar.
+[rtlauncher:container$] INFO Container start took 10953. Ready to accept admin requests.
+Sep 23, 2020 10:00:17 AM org.hsqldb.persist.Logger logSevereEvent
+SEVERE: could not reopen database
+org.hsqldb.HsqlException: Database does not exists: C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\data\database\hsqldb\default\default
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDataSource.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDataSource.getConnection(Unknown Source)
+	at org.apache.commons.dbcp2.DataSourceConnectionFactory.createConnection(DataSourceConnectionFactory.java:83)
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:355)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:874)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:417)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:346)
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:134)
+	at com.mendix.connectionbus.connections.jdbc.ConnectionManager.getConnection(ConnectionManager.java:49)
+	at com.mendix.connectionbus.ConnectionBusInitializer.$anonfun$createConnection$1(ConnectionBusInitializer.scala:52)
+	at scala.util.Try$.apply(Try.scala:213)
+	at com.mendix.connectionbus.ConnectionBusInitializer.retry(ConnectionBusInitializer.scala:60)
+	at com.mendix.connectionbus.ConnectionBusInitializer.createConnection(ConnectionBusInitializer.scala:52)
+	at com.mendix.connectionbus.ConnectionBusInitializer.initialize(ConnectionBusInitializer.scala:42)
+	at com.mendix.connectionbus.ConnectionBusImpl.initialize(ConnectionBusImpl.java:361)
+	at com.mendix.basis.impl.MxRuntimeImplBase.initializeConnectionBus(MxRuntimeImplBase.java:502)
+	at com.mendix.basis.impl.MxRuntimeImplBase.start(MxRuntimeImplBase.java:316)
+	at com.mendix.m2ee.appcontainer.actions.StartAction.startRuntime(StartAction.java:48)
+	at com.mendix.m2ee.appcontainer.actions.StartAction.execute(StartAction.java:30)
+	at com.mendix.m2ee.appcontainer.server.handler.HttpAdminHandler.handle(HttpAdminHandler.java:129)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:501)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:272)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Sep 23, 2020 10:00:18 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: Checkpoint start
+Sep 23, 2020 10:00:18 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose start
+Sep 23, 2020 10:00:18 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose synched
+Sep 23, 2020 10:00:18 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose script done
+Sep 23, 2020 10:00:18 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose end
+Sep 23, 2020 10:00:18 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: Checkpoint end - txts: 1
+Sep 23, 2020 10:04:53 AM org.hsqldb.persist.Logger logInfoEvent
+INFO: Database closed
+
+FO
+FO
