@@ -1,4 +1,3 @@
-package eu.additude;
 
 public class Opgave5 {
     public static void main(String[] args) {
