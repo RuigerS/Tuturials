@@ -1,5 +1,8 @@
 #include <stdio.h>
-#include <cs50.h>
+//#include <cs50.h>
+
+// because CS50.h
+typedef char *string;
 
 int main(void)
 {
