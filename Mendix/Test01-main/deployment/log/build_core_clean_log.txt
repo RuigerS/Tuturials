@@ -1,9 +1,0 @@
-Buildfile: C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\build_core.xml
-
-clean:
-   [delete] Deleting directory C:\Users\rutge\OneDrive\Documenten\Mendix\Test01-main\deployment\model
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-
-
