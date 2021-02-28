@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdbool.h> // bool is not a default in C
 #include <string.h> // strlen()
 
@@ -88,6 +89,44 @@ int main(void)
   }
 
   function(10);
+
+  typedef struct 
+  {
+    char name[50];
+    char phone[13];
+  } person;
+  person people[2];
+  strcpy(people[0].name, "Naam Persoon");
+  strcpy(people[0].phone,"Telefoon");
+
+  int m = 50;
+  printf("%i/n",m);  // just 50
+  printf("%p/n",&m);  // %p pointer; & refers to the adress of m (%p 8 bytes)
+  printf("%i/n",*&m);  // * prints the contents (dereference operator) @ address of m: 50 again
+  
+  // Very confusing:
+  int *p = &m;  // Create a pointer to the address of m 
+  printf("%p\n", p);  // print the address
+  printf("%i\n", *p);  // print the value
+  
+  char *s = "HI!";
+  printf("%c\n", s[0]);
+  printf("%c\n", s[1]);
+  printf("%c\n", s[2]);
+  //AKA
+  printf("%c\n", *s);
+  printf("%c\n", *(s+1));
+  printf("%c\n", *(s+2));
+
+
+  char *s = getstring("s: ");
+  char *t = malloc(strlen(s)+1);  // reserve number of bytes
+  for (int i = 0, n = strlen(s); i <= n; i++)  // i <= n because extra '\0'
+  {
+    *(t+i) = *(s+i);  // aka t[i]=s[i];
+  }
+  free(t);  // release memory asked with malloc()
+
 
   return 0;  // default "All OK" exit code 0.
 }
