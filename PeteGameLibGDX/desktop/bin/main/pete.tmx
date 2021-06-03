@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="80" height="30" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="22">
+ <tileset firstgid="1" source="floor.tsx"/>
+ <tileset firstgid="19" source="acorn.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="80" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztk8sOwjAMBEN5lVcL/P/HsrlFOZBgZaUizUhziOTYe7BTAgAAAAAAAAAAAAAAAPjOTp7+ZJ47a6T/Wd4NWRzz3Fkj/R/ybcjimOfO+kv/vKuT3MuDPCb/bUTnubNG+uddneVFXuUt+W8jOs+dNdI/7+oiV/mUr+S/jeg8d9be/tMGLW9m5Luntq5v/Zk3aHkzI989tXV968+yQcubGfnuqa3rW38+NAALxQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Collectables">
+  <object id="1" gid="19" x="256.424" y="434.534" width="16" height="16"/>
+  <object id="2" gid="19" x="289.644" y="412.609" width="16" height="16"/>
+  <object id="3" gid="19" x="319.541" y="434.534" width="16" height="16"/>
+  <object id="4" gid="19" x="351.431" y="417.924" width="16" height="16"/>
+  <object id="12" gid="19" x="623" y="417" width="16" height="16"/>
+  <object id="13" gid="19" x="643" y="431" width="16" height="16"/>
+  <object id="14" gid="19" x="659" y="413" width="16" height="16"/>
+  <object id="15" gid="19" x="677" y="395" width="16" height="16"/>
+  <object id="16" gid="19" x="638" y="382" width="16" height="16"/>
+  <object id="17" gid="19" x="912" y="413" width="16" height="16"/>
+  <object id="18" gid="19" x="947" y="432" width="16" height="16"/>
+  <object id="19" gid="19" x="976" y="397" width="16" height="16"/>
+  <object id="20" gid="19" x="1009" y="416" width="16" height="16"/>
+  <object id="21" gid="19" x="1037" y="432" width="16" height="16"/>
+ </objectgroup>
+</map>
